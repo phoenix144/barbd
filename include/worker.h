@@ -1,22 +1,23 @@
-/*H****************************************************************************
- * FILENAME: worker.c					PROJECT: barbd
+/**
+ * @file worker.c
  *
- * DESCRIPTION:
- * 	Starts a given rdiff-backup job and logs result.
+ * @brief Starts a given rdiff-backup job and logs result.
  * 	
  *
- * PUBLIC FUNCTIONS:
- * 	int startWorker()
- *
- * AUTHOR: Ferdinand Ellinger
+ * @author Ferdinand Ellinger
  * 
- *H*/
+ */
 
 
 #ifndef __WORKER_H__
 #define __WORKER_H__
 
 
+/**
+ * @public
+ *
+ * @brief Forks worker thread.
+ */
 extern int startWorker();
 
 #endif

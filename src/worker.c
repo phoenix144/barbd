@@ -1,16 +1,12 @@
-/*H****************************************************************************
- * FILENAME: worker.c					PROJECT: barbd
+/**
+ * @file worker.h
  *
- * DESCRIPTION:
- * 	Starts a given rdiff-backup job and logs result.
+ * @brief Starts a given rdiff-backup job and logs result.
  * 	
  *
- * PUBLIC FUNCTIONS:
- * 	int startWorker()
- *
- * AUTHOR: Ferdinand Ellinger
+ * @author Ferdinand Ellinger
  * 
- *H*/
+ */
 
 
 #include "../include/worker.h"
@@ -20,5 +16,6 @@
 
 
 extern int startWorker() {
+	printf("[Worker] starting ...\n");
 	return 0;
 }

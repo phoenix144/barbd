@@ -31,7 +31,7 @@ barbd: $(OBJ)
 	$(CC) -o $(BDIR)/$@ $^ $(CFLAGS) $(LIBS)
 
 
-.PHONY: all clean execute
+.PHONY: all clean execute doc-regen clean-doc
 
 all: barbd
 
@@ -40,3 +40,10 @@ clean:
 
 execute:
 	$(BDIR)/barbd
+	
+doc-regen:
+	rm -rf doc/*
+	doxygen
+
+clean-doc:
+	rm -rf doc/*

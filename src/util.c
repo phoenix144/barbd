@@ -1,16 +1,12 @@
-/*H****************************************************************************
- * FILENAME: util.c					PROJECT: barbd
+/**
+ * @file util.c
  *
- * DESCRIPTION:
- * 	Provides a set of helper tools, e.g. conf-file parser or logging.
+ * @brief Provides a set of helper tools, e.g. conf-file parser or logging.
  * 	
  *
- * PUBLIC FUNCTIONS:
- * 	int parseConf()
- *
- * AUTHOR: Ferdinand Ellinger
+ * @author Ferdinand Ellinger
  * 
- *H*/
+ */
 
 #include "../include/util.h"
 
@@ -19,5 +15,6 @@
 
 
 extern int parseConf() {
+	printf("[Util] Parsing config ...\n");
 	return 0;
 }

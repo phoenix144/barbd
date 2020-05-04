@@ -1,25 +1,26 @@
-/*H****************************************************************************
- * FILENAME: daemon.c					PROJECT: barbd
+/**
+ * @file daemon.c
  *
- * DESCRIPTION:
- * 	the daemon module is initialized by setting up a signal handler and
- * 	parsing backup jobs from config.
- * 	for every job, a working thread ist started periodically.
- * 	job config reload is called upon receiving SIGHUP(7)
- * 	
- *
- * PUBLIC FUNCTIONS:
- * 	int startDaemon()
- *
- * AUTHOR: Ferdinand Ellinger
+ * @brief Initializes the daemon and waits for next job.
  * 
- *H*/
+ * The daemon module is initialized by setting up a signal handler and
+ * parsing backup jobs from config.
+ * for every job, a working thread ist started periodically.
+ * job config reload is called upon receiving SIGHUP(7)
+ *
+ * @author Ferdinand Ellinger
+ * 
+ */
 
 
 #ifndef __DAEMON_H__
 #define __DAEMON_H__
 
-
+/**
+ * @public
+ *
+ * @brief fires up the daemon
+ */
 extern int startDaemon();
 
 #endif
